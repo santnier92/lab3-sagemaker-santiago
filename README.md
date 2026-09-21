@@ -1,4 +1,4 @@
-# Laboratorio 3.1 - Amazon SageMaker
+# Laboratorio 3.1 - Amazon SageMaker (Creación e importación de datos)
 
 **Autor:** Santiago Nieto Rodriguez
 
@@ -31,16 +31,6 @@
 **Evidencia:**
 ![Copia del notebook con nombre en markdown](evidencias/tarea5_linear_learner_copia.png)
 
-## Evidencia adicional
-
-**Acceso a la plataforma del laboratorio:**
-![Acceso institucional](evidencias/acceso_plataforma.png)
-
-**Gestión del repositorio (colaborador invitado):**
-![Colaboradores del repositorio](evidencias/gestion_repositorio.png)
-
-# Laboratorio 3.2 - Amazon SageMaker (Exploración de datos)
-
 ## Tarea 4 - Importación de datos
 
 **Qué hice:** Creé un nuevo cuaderno (`vertebral_column_analysis.ipynb`), instalé la dependencia `scipy` en el kernel `conda_python310`, y agregué código para descargar y extraer el conjunto de datos de la columna vertebral (UCI Machine Learning Repository) en formato `.zip`. Cargué el archivo `column_2C_weka.arff` en un DataFrame de Pandas usando `scipy.io.arff`.
@@ -50,3 +40,11 @@
 **Evidencia:**
 ![Notebook con imports, descarga y DataFrame cargado](evidencias/tarea6_vertebral_notebook_ejecutado.png)
 ![Archivos extraídos del zip](evidencias/tarea7_archivos_extraidos.png)
+
+## Evidencia adicional
+
+**Acceso a la plataforma del laboratorio:**
+![Acceso institucional](evidencias/acceso_plataforma.png)
+
+**Gestión del repositorio (colaborador invitado):**
+![Colaboradores del repositorio](evidencias/gestion_repositorio.png)

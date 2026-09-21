@@ -30,3 +30,11 @@
 
 **Evidencia:**
 ![Copia del notebook con nombre en markdown](evidencias/tarea5_linear_learner_copia.png)
+
+## Evidencia adicional
+
+**Acceso a la plataforma del laboratorio:**
+![Acceso institucional](evidencias/acceso_plataforma.png)
+
+**Gestión del repositorio (colaborador invitado):**
+![Colaboradores del repositorio](evidencias/gestion_repositorio.png)

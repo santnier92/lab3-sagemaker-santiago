@@ -48,3 +48,23 @@
 
 **Gestión del repositorio (colaborador invitado):**
 ![Colaboradores del repositorio](evidencias/gestion_repositorio.png)
+
+# Laboratorio 3.2 - Amazon SageMaker (Exploración de datos)
+
+## Sección 3a - Describir los datos
+
+**Qué hice:** Ejecuté el notebook oficial del laboratorio (`3_2-machinelearning.ipynb`) usando mi cuenta institucional de AWS. Exploré la forma, columnas, tipos de datos y estadísticas descriptivas del conjunto de datos de columna vertebral, y visualicé la distribución de cada característica mediante gráficos de densidad, histogramas y boxplots.
+
+**Por qué:** Entender la forma y calidad de los datos (valores atípicos, distribución) antes de construir cualquier modelo de aprendizaje automático.
+
+**Evidencia:**
+![Exploración de datos](evidencias/tarea8_exploracion_datos.png)
+
+## Sección 3b - Encontrar correlaciones
+
+**Qué hice:** Convertí la columna `class` (originalmente en bytes) a valores numéricos mediante un mapeador, y analicé la relación entre `degree_spondylolisthesis` y el objetivo mediante un diagrama de dispersión. Generé la matriz de correlación completa y la visualicé como mapa de calor con Seaborn.
+
+**Por qué:** Identificar qué características tienen mayor relación con el diagnóstico (normal/anormal), como insumo para la selección de variables en laboratorios posteriores.
+
+**Evidencia:**
+![Matriz de correlación y heatmap](evidencias/tarea9_correlaciones.png)

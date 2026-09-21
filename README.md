@@ -38,3 +38,15 @@
 
 **Gestión del repositorio (colaborador invitado):**
 ![Colaboradores del repositorio](evidencias/gestion_repositorio.png)
+
+# Laboratorio 3.2 - Amazon SageMaker (Exploración de datos)
+
+## Tarea 4 - Importación de datos
+
+**Qué hice:** Creé un nuevo cuaderno (`vertebral_column_analysis.ipynb`), instalé la dependencia `scipy` en el kernel `conda_python310`, y agregué código para descargar y extraer el conjunto de datos de la columna vertebral (UCI Machine Learning Repository) en formato `.zip`. Cargué el archivo `column_2C_weka.arff` en un DataFrame de Pandas usando `scipy.io.arff`.
+
+**Por qué:** Es el primer paso para trabajar con datos reales en los laboratorios guiados de exploración y codificación de variables.
+
+**Evidencia:**
+![Notebook con imports, descarga y DataFrame cargado](evidencias/tarea6_vertebral_notebook_ejecutado.png)
+![Archivos extraídos del zip](evidencias/tarea7_archivos_extraidos.png)

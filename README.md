@@ -21,3 +21,12 @@
 
 **Evidencia:**
 ![Notebook ejecutado completo](evidencias/tarea4_notebook_ejecutado.png)
+
+## Tarea 3 - Apertura de un cuaderno de muestra
+
+**Qué hice:** Localicé el notebook de muestra `linear_learner_mnist.ipynb` (algoritmo Linear Learner sobre el dataset MNIST), generé una copia editable fuera de la carpeta de solo lectura, agregué mi nombre en una celda de Markdown al inicio, y recorrí su contenido sin ejecutar las celdas de código (requieren un bucket de Amazon S3, según indica el enunciado).
+
+**Por qué:** Familiarizarme con la estructura de un notebook de entrenamiento de modelos de Amazon SageMaker antes de trabajar con datos propios.
+
+**Evidencia:**
+![Copia del notebook con nombre en markdown](evidencias/tarea5_linear_learner_copia.png)

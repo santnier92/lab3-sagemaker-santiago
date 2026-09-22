@@ -68,3 +68,20 @@
 
 **Evidencia:**
 ![Matriz de correlación y heatmap](evidencias/tarea9_correlaciones.png)
+
+# Laboratorio 3.3 - Amazon SageMaker (Codificación de datos categóricos)
+
+## Codificación de variables ordinales
+
+**Qué hice:** Cargué el dataset de automóviles (`imports-85.csv`) y lo reduje a cuatro columnas categóricas. Codifiqué `num-of-doors` y `num-of-cylinders` usando diccionarios mapeadores con `.replace()`, ya que sus valores tienen un orden natural (cantidad de puertas/cilindros).
+
+**Por qué:** Los modelos de machine learning requieren entradas numéricas; para variables ordinales, un mapeo directo conserva el orden relativo entre categorías.
+
+## Codificación de variables no ordinales
+
+**Qué hice:** Codifiqué `drive-wheels` (3 valores) con `pd.get_dummies()` estándar, y `aspiration` (2 valores) con `get_dummies(drop_first=True)` para evitar redundancia.
+
+**Por qué:** Para variables sin orden natural, asignar números directamente introduciría una jerarquía artificial; la codificación one-hot evita ese sesgo.
+
+**Evidencia:**
+![Codificación ordinal y no ordinal](evidencias/tarea10_codificacion_categorica.png)

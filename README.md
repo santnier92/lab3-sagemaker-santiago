@@ -96,3 +96,18 @@
 
 **Evidencia:**
 ![Entrenamiento completado](evidencias/tarea11_entrenamiento_modelo.png)
+
+# Laboratorio 3.5 - Amazon SageMaker (Implementación de un modelo)
+
+## Despliegue, predicción y transformación por lotes
+
+**Qué hice:** Desplegué el modelo XGBoost entrenado como un endpoint en tiempo real (`xgb_predictor`) usando una instancia `ml.m4.xlarge`. Realicé una predicción de ejemplo con datos del conjunto de prueba, y validé el modelo enviando la entrada `"63.0,12.5,45.0,50.5,125.0,3.0"` directamente al endpoint desplegado. Finalmente, eliminé el endpoint y ejecuté una transformación por lotes (`batch transform`) sobre todo el conjunto de prueba, convirtiendo las probabilidades resultantes a clases binarias con un umbral de 0.65.
+
+**Por qué:** Desplegar el modelo permite generar predicciones en tiempo real sobre nuevos pacientes; la transformación por lotes es una alternativa más eficiente para evaluar el modelo sobre un conjunto de datos completo sin mantener un endpoint activo (y su costo asociado) todo el tiempo.
+
+**Validación solicitada:** Con la entrada `63.0,12.5,45.0,50.5,125.0,3.0`, el modelo devolvió una probabilidad de **0.0169** de pertenecer a la clase "Abnormal". Dado que el valor está muy por debajo del umbral de decisión (0.5), la lectura del resultado es que el modelo predice que el paciente **no presenta anomalía** (clase Normal), con alta confianza. Esto es coherente con el valor bajo de `degree_spondylolisthesis` (3.0) en la entrada, característica que el análisis de correlaciones del Laboratorio 3.2 identificó como la más asociada al diagnóstico de anomalía.
+
+**Evidencia:**
+![Entrenamiento y despliegue del modelo](evidencias/tarea12_entrenamiento_despliegue.png)
+![Validación del endpoint con la entrada solicitada](evidencias/tarea13_validacion_endpoint.png)
+![Transformación por lotes](evidencias/tarea14_transformacion_lotes.png)

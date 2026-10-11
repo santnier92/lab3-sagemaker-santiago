@@ -85,3 +85,14 @@
 
 **Evidencia:**
 ![Codificación ordinal y no ordinal](evidencias/tarea10_codificacion_categorica.png)
+
+# Laboratorio 3.4 - Amazon SageMaker (Formación de un modelo)
+
+## Entrenamiento del modelo XGBoost
+
+**Qué hice:** Preparé el dataset de columna vertebral (movida la columna `class` a la primera posición, como requiere XGBoost), lo dividí en conjuntos de entrenamiento (80%), prueba y validación (10% cada uno, estratificados por clase), subí los tres CSV a Amazon S3, y entrené un modelo XGBoost mediante `sagemaker.estimator.Estimator` con los hiperparámetros `num_round=42`, `eval_metric=auc`, `objective=binary:logistic`.
+
+**Por qué:** Dividir los datos permite evaluar el modelo con datos que no vio durante el entrenamiento, evitando sobreajuste; XGBoost es un algoritmo de boosting eficiente para problemas de clasificación binaria como este.
+
+**Evidencia:**
+![Entrenamiento completado](evidencias/tarea11_entrenamiento_modelo.png)
